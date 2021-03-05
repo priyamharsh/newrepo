@@ -67,6 +67,7 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
+            pygame.quit()
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_LEFT:
                 playerXchange = -10
